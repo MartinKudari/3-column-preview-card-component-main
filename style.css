@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+   
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+:root{
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+--Transparent-white: hsl(0, 0%, 100%, 0.75);
+--Very-light-gray: hsl(0, 0%, 95%);
+}
+.container{
+    display: grid;
+    
+    
+}
+body{
+    font-family: "lexend deca", 'Times New Roman', Times, serif;
+}
+h3{
+    font-family: "big shoulders display", sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+p{
+    font-size: 15px;
+    line-height: 1.6;
+}
+.container{
+    padding: 200px;
+}
+.card{
+    padding: 30px;
+
+}
+.card img{
+    margin-bottom: 25px;
+}
+.card img{
+    margin-bottom: 10px;
+}
+.card p{
+    margin-bottom: 30px;
+}
+.btn{
+    background-color: #fff;
+    border:2px solid #fff;
+    border-radius: 30px;
+    padding: 10px 20px;
+    transition: all 0.4s ease-in-out;
+    place-items:bottom;
+}
+.btn:hover{
+    color:#fff;
+    background-color:transparent;
+}
+.orange{
+    background-color: hsl(31, 77%, 52%);
+    color: #fff;
+    border-radius: 10px 0 0 10px ;
+    height: 400px;
+    width: 400px;
+}
+.light-cyan{
+    background-color: var(--Dark-cyan);
+    color: white;
+    height: 400px;
+    width: 400px;
+    
+}
+.dark-cyan{
+    background-color: var(--Very-dark-cyan);
+    color: white;
+    border-radius: 0 10px  10px  0;
+    height: 400px;
+    width: 400px;
+}
+.orange .btn{
+    color: var(--Bright-orange);
+    color: #fff;
+}
+.light-cyan .btn{
+    color: var(--Dark-cyan);
+    color: #fff;
+}
+.dark-cyan .btn{
+    color: var(--Very-dark-cyan);
+    color: #fff;
+}
+@media(min-width:375px){
+    .container{
+        display: flex;
+        
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        max-height: 900px;
+        margin: auto;
+
+    }
+    .card{
+        padding: 10px ;
+    }
+}
